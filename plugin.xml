@@ -9,8 +9,8 @@
     <description>Cordova Wifi Manager for Android and iOS</description>
     <license>Apache 2.0</license>
     <keywords>cordova,network,wifi,phonegap</keywords>
-    <repo>https://github.com/tripflex/wifiwizard2.git</repo>
-    <issue>https://github.com/tripflex/wifiwizard2/issues</issue>
+    <repo>https://github.com/Effera/WifiWizard2.git</repo>
+    <issue>https://github.com/Effera/WifiWizard2/issues</issue>
 
     <js-module src="www/WifiWizard2.js" name="WifiWizard2">
         <clobbers target="window.WifiWizard2" />
