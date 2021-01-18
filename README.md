@@ -1,4 +1,4 @@
-# WiFiWizard2 - 3.1.1<!-- omit in toc -->
+# WiFiWizard2 - 4.1.0<!-- omit in toc -->
 
 Table of Contents<!-- omit in toc -->
 ---
@@ -26,7 +26,14 @@ Table of Contents<!-- omit in toc -->
   - [Ionic/Angular Example (User Provided)](#ionicangular-example-user-provided)
 - [Changelog:](#changelog)
 
+
+# Warning
+
+Warning: This fork of WifiWizard2 contains specific changes that serves our companys need, and is thus not a generic plugin.
+Use at your own risk and make sure to look at the commit history and compare with the original repo.
+
 # About
+
 WifiWizard2 enables Wifi management for both Android and iOS applications within Cordova/Phonegap projects.
 
 This project is a fork of the [WifiWizard](https://github.com/hoerresb/WifiWizard) plugin with fixes and updates, as well as patches taken from the [Cordova Network Manager](https://github.com/arsenal942/Cordova-Network-Manager) plugin.
