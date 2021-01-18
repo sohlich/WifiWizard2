@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-wifiwizard2",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "cordova": {
     "id": "wifiwizard2",
     "platforms": [
