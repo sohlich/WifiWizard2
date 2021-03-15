@@ -528,7 +528,9 @@ public class WifiWizard2 extends CordovaPlugin {
 
         WifiNetworkSpecifier.Builder builder = new WifiNetworkSpecifier.Builder();
         builder.setSsid(newSSID);
-        builder.setWpa2Passphrase(newPass);
+        if (newPass != null && !newPass.trim().isEmpty()) {
+          builder.setWpa2Passphrase(newPass);
+        }
 
         WifiNetworkSpecifier wifiNetworkSpecifier = builder.build();
 
