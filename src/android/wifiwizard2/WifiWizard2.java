@@ -503,6 +503,7 @@ public class WifiWizard2 extends CordovaPlugin {
               });
             alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
               public void onClick(DialogInterface dialog, int which) {
+                callbackContext.error("NETWORK_CONNECTION_CANCELED");
               }
             });
             
@@ -523,6 +524,20 @@ public class WifiWizard2 extends CordovaPlugin {
                 }
               },
             5000);
+          }
+
+          @Override
+          public void onBlockedStatusChanged(Network network, boolean blocked) {
+            super.onBlockedStatusChanged(network, blocked);
+            Log.d(TAG, "blocked");
+            Log.d(TAG, network.toString());
+            callbackContext.error("NETWORK_BLOCKED_ERROR");
+          }
+
+          @Override
+          public void onUnavailable() {
+            Log.d(TAG, "unavailable");
+            callbackContext.error("NETWORK_UNAVAILABLE_ERROR");
           }
         };
 
